@@ -1,4 +1,4 @@
-package com.java1234.dom;
+package com.java1234.SAX;
 
 import org.w3c.dom.*;
 
@@ -17,7 +17,7 @@ public class App {
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse("src/main/resources/students.xml");
 
-            /*
+            /* 
                 获取根节点
              */
             Element students = (Element) doc.getElementsByTagName("students").item(0);
