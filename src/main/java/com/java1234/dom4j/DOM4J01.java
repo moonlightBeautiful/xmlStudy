@@ -33,7 +33,7 @@ public class DOM4J01 {
         OutputFormat format = OutputFormat.createPrettyPrint();
         format.setEncoding("UTF-8");
         try {
-            XMLWriter writer = new XMLWriter(new FileOutputStream("src/student3.xml"), format);
+            XMLWriter writer = new XMLWriter(new FileOutputStream("src/main/resources/student3.xml"), format);
             writer.write(document);
             writer.close();
         } catch (UnsupportedEncodingException e) {

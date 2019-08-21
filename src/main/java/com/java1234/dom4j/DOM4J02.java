@@ -23,7 +23,7 @@ public class DOM4J02 {
             System.out.println("姓名：" + studentElement.elementText("name"));
             System.out.println("性别：" + studentElement.elementText("sex"));
             System.out.println("年龄：" + studentElement.elementText("age"));
-            System.out.println("=========");
+            System.out.println("================================================");
         }
     }
 }
