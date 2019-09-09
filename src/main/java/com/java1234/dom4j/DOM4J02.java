@@ -4,6 +4,7 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
+import java.io.File;
 import java.util.Iterator;
 
 /**
@@ -12,11 +13,17 @@ import java.util.Iterator;
 public class DOM4J02 {
 
     public static void main(String[] args) throws Exception {
+        String filePath = "src/main/resources/students.xml";
+        File file = new File(filePath);
+        // Simple Api for XML
         SAXReader saxReader = new SAXReader();
-        Document document = saxReader.read("src/main/resources/students.xml");
+        Document document = saxReader.read(file);
 
         Element rootElement = document.getRootElement();
-        Iterator iter = rootElement.elementIterator();
+        /*//全部子元素迭代器
+        Iterator iter = rootElement.elementIterator();*/
+        //指定标签名子元素迭代器
+        Iterator iter = rootElement.elementIterator("student");
         while (iter.hasNext()) {
             Element studentElement = (Element) iter.next();
             System.out.println("学号：" + studentElement.attributeValue("id"));
