@@ -21,7 +21,7 @@ public class DOM4J01 {
 
         Element studentElement = document.addElement("student");
         studentElement.addAttribute("id", "001");
-        studentElement.addAttribute("aa", "xx");
+        studentElement.addAttribute("grade", "大一");
 
         Element name = studentElement.addElement("name");
         name.setText("张三");
@@ -30,6 +30,7 @@ public class DOM4J01 {
         Element age = studentElement.addElement("age");
         age.setText("20");
 
+        studentElement.remove(name);
         OutputFormat format = OutputFormat.createPrettyPrint();
         format.setEncoding("UTF-8");
         try {

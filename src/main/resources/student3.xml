@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<student id="001" aa="xx">
-  <name>张三</name>
+<student id="001" grade="大一">
   <sex>男</sex>
   <age>20</age>
 </student>
