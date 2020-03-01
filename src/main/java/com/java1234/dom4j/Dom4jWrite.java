@@ -14,7 +14,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * 写xml文件
  */
-public class DOM4J01 {
+public class Dom4jWrite {
 
     public static void main(String[] args) {
         Document document = DocumentHelper.createDocument();
@@ -34,7 +34,7 @@ public class DOM4J01 {
         OutputFormat format = OutputFormat.createPrettyPrint();
         format.setEncoding("UTF-8");
         try {
-            XMLWriter writer = new XMLWriter(new FileOutputStream("src/main/resources/student3.xml"), format);
+            XMLWriter writer = new XMLWriter(new FileOutputStream("src/main/resources/studentDom4j.xml"), format);
             writer.write(document);
             writer.close();
         } catch (UnsupportedEncodingException e) {

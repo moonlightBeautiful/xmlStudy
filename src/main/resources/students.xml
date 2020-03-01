@@ -10,10 +10,9 @@
 		<sex>女</sex>
 		<age>21</age>
 	</student>
-	<student1 id="002">
+	<student id="002">
 		<name>李四<nn>ss</nn>123</name>
 		<sex>女</sex>
 		<age>21</age>
-	</student1>
+	</student>
 </students>
-

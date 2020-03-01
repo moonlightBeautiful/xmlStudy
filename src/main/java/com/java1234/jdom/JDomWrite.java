@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * 写xml文件
  */
-public class JDOM01 {
+public class JDomWrite {
 
     public static void main(String[] args) {
         Element student = new Element("student");
@@ -23,11 +23,11 @@ public class JDOM01 {
         student.setAttribute(aa);
 
         Element name = new Element("name");
-        name.setText("����");
+        name.setText("高旭");
         student.addContent(name);
 
         Element sex = new Element("sex");
-        sex.setText("��");
+        sex.setText("男");
         student.addContent(sex);
 
         Element age = new Element("age");
@@ -39,7 +39,7 @@ public class JDOM01 {
         out.setFormat(out.getFormat().setEncoding("UTF-8"));
 
         try {
-            out.output(document, new FileOutputStream("src/student2.xml"));
+            out.output(document, new FileOutputStream("src/main/resources/studentJDom.xml"));
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

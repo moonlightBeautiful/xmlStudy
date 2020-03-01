@@ -9,11 +9,11 @@ import java.util.List;
 /**
  * 读xml文件
  */
-public class JDOM02 {
+public class JDomRead {
 
     public static void main(String[] args) throws Exception {
         SAXBuilder builder = new SAXBuilder();
-        Document document = builder.build("src/students.xml");
+        Document document = builder.build("src/main/resources/students.xml");
         Element students = document.getRootElement();
         List studentList = students.getChildren("student");
         for (int i = 0; i < studentList.size(); i++) {
@@ -22,7 +22,7 @@ public class JDOM02 {
             String name = student.getChildText("name");
             String sex = student.getChildText("sex");
             String age = student.getChildText("age");
-            System.out.println("ѧ�ţ�" + id + ";������" + name + ";�Ա�" + sex + ";���䣺" + age);
+            System.out.println("学号：" + id + ";姓名：" + name + ";性别：" + sex + ";年龄：" + age);
         }
     }
 }
