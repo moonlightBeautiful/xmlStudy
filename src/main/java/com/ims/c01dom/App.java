@@ -1,4 +1,4 @@
-package com.java1234.dom;
+package com.ims.c01dom;
 
 import org.w3c.dom.*;
 

@@ -1,4 +1,4 @@
-package com.java1234.dom4j;
+package com.ims.c04dom4j;
 
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -18,10 +18,10 @@ public class Dom4jRead {
         SAXReader saxReader = new SAXReader();
         Document document = saxReader.read(file);
 
-        Element rootElement = document.getRootElement();
-        Iterator iter = rootElement.elementIterator();
-        while (iter.hasNext()) {
-            Element studentElement = (Element) iter.next();
+        Element students = document.getRootElement();
+        Iterator studentIter = students.elementIterator();
+        while (studentIter.hasNext()) {
+            Element studentElement = (Element) studentIter.next();
             System.out.println("学号：" + studentElement.attributeValue("id"));
             System.out.println("姓名：" + studentElement.elementText("name"));
             System.out.println("性别：" + studentElement.elementText("sex"));

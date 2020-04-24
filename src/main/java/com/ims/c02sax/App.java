@@ -1,6 +1,6 @@
-package com.java1234.SAX;
+package com.ims.c02sax;
 
-import com.java1234.SAX.model.Student;
+import com.ims.c02sax.model.Student;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;

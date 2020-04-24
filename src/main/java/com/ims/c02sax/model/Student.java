@@ -1,4 +1,4 @@
-package com.java1234.SAX.model;
+package com.ims.c02sax.model;
 
 public class Student {
 

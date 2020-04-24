@@ -1,4 +1,4 @@
-package com.java1234.jdom;
+package com.ims.c03jdom;
 
 import org.jdom2.Document;
 import org.jdom2.Element;

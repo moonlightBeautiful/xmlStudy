@@ -1,4 +1,4 @@
-package com.java1234.dom4j;
+package com.ims.c04dom4j;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
